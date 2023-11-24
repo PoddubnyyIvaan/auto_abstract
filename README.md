@@ -18,8 +18,10 @@
 ## <a name="setting"> Установка </a>
 <p> «Speech to Text» является универсальным помощником, с которым Вы можете работать по следующей схеме:
 </p>
+**здесь нужно уточнить **
 <p>
     1. Пройдите по ссылке:
+   
     ("https://github.com/PoddubnyyIvaan/auto_abstract/edit/main/README.md")</p>
 
 </p>
