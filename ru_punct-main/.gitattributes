@@ -1,0 +1,2 @@
+*.pcl filter=lfs diff=lfs merge=lfs -text
+Model_ru_punctuator_h256_lr0.02.pcl filter=lfs diff=lfs merge=lfs -text
