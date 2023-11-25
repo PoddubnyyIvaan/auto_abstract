@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="{% static 'css/upstyles.css' %}"/>
+</head>
+<body>
+<article class="article article_whitebg article_first">
+    <h2 class="black">Ваш конспект готов!<br></h2>
+    <p class="black">Скачайте dock файл по ссылке ниже</p>
+    <a href="http://127.0.0.1:8000/file/download/{{id}}" class="form_button"> Скачать</a>
+    <p class="black">Также мы можем направить ваш конспект на вашу почту!</p>
+    <form enctype="multipart/form-data" method="POST" class="form">
+        {% csrf_token %}
+        <table class="form_input">
+            {{ form }}
+        </table>
+        <input type="submit" value="Отправить" class="form_button">
+    </form>
+</article>
+</body>
+</html>

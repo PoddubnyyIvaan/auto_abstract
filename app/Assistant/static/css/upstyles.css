@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+p {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.article {
+    position: relative;
+    min-height: 100vh;
+    padding: 8px 50px;
+}
+
+.article_whitebg::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+}
+
+.article_first {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.form {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form_input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    transition: transform 0.3s ease-out;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(0, 34, 255, 0.5);;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.form_button {
+    display: inline-block;
+    padding: 12px 32px;
+    transition: all 0.3s ease-out;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #02f;
+    background-clip: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.black {
+    color: #000;
+}
