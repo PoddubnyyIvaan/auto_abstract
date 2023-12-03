@@ -55,7 +55,7 @@ def upload(request, id):
             to_email = form.cleaned_data['user_email']
             message = 'Держите готовый конспект, надеюсь он поможет вам в обучении'
             img_obj = OutModel.objects.get(id=id)
-            file_path = settings.MEDIA_ROOT+'/'+img_obj.data_file.name
+            file_path = img_obj.file_path
             try:
                 email = EmailMessage(subject, message, DEFAULT_FROM_EMAIL, [to_email])
                 email.attach_file(file_path)
@@ -64,7 +64,7 @@ def upload(request, id):
                 email.send()
             except BadHeaderError:
                 return HttpResponse('Ошибка в теме письма.')
-            return render(request,'index.html',{"form": UserForm()})
+            return redirect('/')
         else:
             return JsonResponse(form.errors, status=400)
 
